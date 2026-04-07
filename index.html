@@ -6,7 +6,7 @@
   <title>赵阳 | Academic Homepage</title>
   <meta
     name="description"
-    content="赵阳，哈尔滨工业大学 SCIR 博士生，研究方向为大语言模型后训练中的数据选择、训练效率优化、预训练数据归因与泛化分析。"
+    content="赵阳，哈尔滨工业大学 SCIR 博士生，研究方向为大语言模型全阶段训练中的数据动态优化，包括数据选择、训练效率优化、预训练数据归因与泛化分析。"
   />
   <style>
     :root {
@@ -278,6 +278,14 @@
       font-size: 0.95rem;
     }
 
+    .research-overview {
+      max-width: 920px;
+      line-height: 1.8;
+      margin-bottom: 22px;
+      color: #415062;
+      font-size: 0.98rem;
+    }
+
     .about-grid {
       display: grid;
       grid-template-columns: 1.25fr 0.95fr;
@@ -522,7 +530,7 @@
           <p class="hero-motto">Less is More</p>
           <p class="hero-desc">
             我是哈尔滨工业大学 SCIR（Research Center for Social Computing and Interactive Robotics）博士生，导师为刘挺教授、丁效教授。
-            我的研究聚焦于大语言模型后训练中的数据选择与优化问题，关注如何以更少训练数据实现更优的模型性能、训练效率与泛化能力。
+            我的研究聚焦于大语言模型全阶段训练中的数据动态优化问题，关注如何以更少训练数据实现更优的模型性能、训练效率与泛化能力。
             相关成果以第一作者发表于 NeurIPS、ACL 等 CCF-A 会议 6 篇，并参与获得 ACL Outstanding Paper 的研究工作。
           </p>
 
@@ -537,7 +545,7 @@
             </div>
             <div class="info-card">
               <div class="info-label">Research</div>
-              <div class="info-value">Data Selection for LLM Post-training · Efficient Tuning · Reward Optimization</div>
+              <div class="info-value">Dynamic Data Optimization across the Full LLM Training Pipeline</div>
             </div>
           </div>
 
@@ -562,18 +570,18 @@
         <div class="about-grid">
           <div class="panel">
             <p>
-              我目前在哈尔滨工业大学社会计算与信息检索研究中心攻读博士，长期从事大语言模型后训练中的数据选择研究。
-              我的核心关注点是：如何识别更具训练价值的样本，以更少的数据实现更高效的能力提升、更稳定的优化过程，以及更强的泛化表现。
+              我目前在哈尔滨工业大学社会计算与信息检索研究中心攻读博士，长期从事大语言模型全阶段训练中的数据动态优化研究。
+              我的核心关注点是：如何在预训练、监督微调、强化学习与奖励优化等不同阶段，识别更具训练价值的数据，以更少的数据实现更高效的能力提升、更稳定的优化过程，以及更强的泛化表现。
             </p>
             <p>
-              研究内容主要涵盖指令调优数据选择、强化学习阶段的数据优化、预训练数据归因，以及模型快速泛化与知识能力演化机制分析。
+              研究内容主要涵盖预训练数据归因、指令调优数据选择、强化学习阶段的数据优化、奖励优化中的动态权衡，以及模型快速泛化与知识能力演化机制分析。
             </p>
             <div class="chips">
+              <span class="chip">Dynamic Data Optimization</span>
               <span class="chip">Data Selection for LLMs</span>
               <span class="chip">Efficient Post-training</span>
               <span class="chip">Instruction Tuning</span>
               <span class="chip">RL Data Optimization</span>
-              <span class="chip">Pretraining Data Attribution</span>
               <span class="chip">Generalization Analysis</span>
             </div>
           </div>
@@ -583,12 +591,12 @@
               <h3 class="section-title" style="font-size:1.08rem;">研究关键词</h3>
             </div>
             <div class="skill-list">
-              <span class="skill-pill">Data Selection</span>
-              <span class="skill-pill">Instruction Tuning</span>
-              <span class="skill-pill">RLHF</span>
+              <span class="skill-pill">Pretraining Data Attribution</span>
+              <span class="skill-pill">Instruction Tuning Data Selection</span>
+              <span class="skill-pill">RLHF / RL Data Optimization</span>
               <span class="skill-pill">Reward Optimization</span>
-              <span class="skill-pill">Data Attribution</span>
               <span class="skill-pill">Generalization</span>
+              <span class="skill-pill">Knowledge Evolution</span>
             </div>
           </div>
         </div>
@@ -603,13 +611,13 @@
           <div class="panel">
             <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">研究主线</h3>
             <p style="margin:0; color:#334155;">
-              围绕大语言模型后训练中的数据选择问题展开研究，关注如何在更低数据成本下实现更优的性能、泛化能力与训练效率。
+              围绕大语言模型全阶段训练中的数据动态优化问题展开研究，关注如何在更低数据成本下实现更优的性能、泛化能力与训练效率。
             </p>
           </div>
           <div class="panel">
             <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">代表成果</h3>
             <p style="margin:0; color:#334155;">
-              以第一作者在 NeurIPS、ACL 等会议发表多篇论文，研究涵盖指令调优数据选择、强化学习数据优化、预训练数据归因与模型快速泛化机制分析。
+              以第一作者在 NeurIPS、ACL 等会议发表多篇论文，系统覆盖预训练、SFT、RL 与奖励优化等阶段的数据问题。
             </p>
           </div>
         </div>
@@ -648,19 +656,64 @@
       </section>
 
       <section id="publications" class="section">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 14px;">
           <h2 class="section-title">代表性论文</h2>
           <div class="section-note">Selected works</div>
+        </div>
+
+        <div class="research-overview">
+          我的博士课题聚焦于 <strong>LLM 全阶段训练中的数据动态优化</strong>：研究如何在预训练、监督微调、强化学习与奖励优化等不同阶段，
+          动态识别更具训练价值的数据与目标权衡机制，从而以更少的数据实现更优的性能、泛化能力与训练效率。
+          下列六篇一作论文分别从预训练数据归因、SFT 数据选择、快速泛化机制、RL 数据优化、阶段间数据分工以及奖励目标动态权衡等角度，
+          共同构成了我在这一博士课题上的系统性研究。
         </div>
 
         <div class="publication-group" style="padding-top: 4px;">
           <div class="section-header" style="margin-bottom: 16px;">
             <h3 class="section-title" style="font-size:1.12rem;">一作论文</h3>
+            <div class="section-note">按时间倒序排列的一作代表性论文</div>
           </div>
           <div class="publication-list">
+
+            <article class="publication-card">
+              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <h3 class="publication-title">
+                <a href="https://arxiv.org/abs/2601.07208" target="_blank" rel="noopener noreferrer">
+                  MAESTRO: Meta-learning Adaptive Estimation of Scalarization Trade-offs for Reward Optimization
+                </a>
+              </h3>
+              <div class="publication-authors">Yang Zhao, Hepeng Wang, Xiao Ding, Yangou Ouyang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
+              <div class="publication-venue">ACL 2026 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>奖励优化中多目标之间通常存在复杂权衡，固定标量化策略难以适应不同训练阶段与样本特性。</p>
+                <p><strong>方法：</strong>提出基于元学习的自适应标量化估计方法，动态学习不同奖励目标之间的权衡系数。</p>
+                <p><strong>价值：</strong>提升了奖励优化的适应性与稳定性，为高质量后训练提供了更灵活的目标协调机制。</p>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <h3 class="publication-title">
+                <a href="https://arxiv.org/abs/2601.07224" target="_blank" rel="noopener noreferrer">
+                  Consolidation or Adaptation? PRISM: Disentangling SFT and RL Data via Gradient Concentration
+                </a>
+              </h3>
+              <div class="publication-authors">Yang Zhao, Yangou Ouyang, Xiao Ding, Hepeng Wang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
+              <div class="publication-venue">ACL 2026 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>SFT 与 RL 阶段的数据作用往往交织在一起，缺乏对二者训练功能差异的系统理解。</p>
+                <p><strong>方法：</strong>基于梯度集中性分析，刻画不同数据在后训练不同阶段中的功能分工与适配关系。</p>
+                <p><strong>价值：</strong>有助于更精细地理解和设计后训练数据配比，为阶段化数据选择提供方法支持。</p>
+              </div>
+            </article>
+
             <article class="publication-card">
               <div class="publication-type">NeurIPS 2025 · First Author</div>
-              <h3 class="publication-title"><a href="https://openreview.net/forum?id=sH0ZwzDJZn" target="_blank" rel="noopener noreferrer">UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement Learning Data Selection</a></h3>
+              <h3 class="publication-title">
+                <a href="https://openreview.net/forum?id=sH0ZwzDJZn" target="_blank" rel="noopener noreferrer">
+                  UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement Learning Data Selection
+                </a>
+              </h3>
               <div class="publication-authors">Yang Zhao, Kai Xiong, Xiao Ding, Li Du, Yangou Ouyang, Zhouhao Sun, Jiannan Guan, Wenbin Zhang, Bin Liu, Dong Hu, Bing Qin, Ting Liu</div>
               <div class="publication-venue">NeurIPS 2025</div>
               <div class="publication-summary">
@@ -672,7 +725,11 @@
 
             <article class="publication-card">
               <div class="publication-type">ACL 2025 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://aclanthology.org/2025.acl-long.1189/" target="_blank" rel="noopener noreferrer">Beyond similarity: A gradient-based graph method for instruction tuning data selection</a></h3>
+              <h3 class="publication-title">
+                <a href="https://aclanthology.org/2025.acl-long.1189/" target="_blank" rel="noopener noreferrer">
+                  Beyond similarity: A gradient-based graph method for instruction tuning data selection
+                </a>
+              </h3>
               <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Yangou Ouyang, Hepeng Wang, Kai Xiong, Jinglong Gao, Zhouhao Sun, Dongliang Xu, Qing Yang, Dongchen Li, Bing Qin, Ting Liu</div>
               <div class="publication-venue">ACL 2025 Main Conference</div>
               <div class="publication-summary">
@@ -683,8 +740,28 @@
             </article>
 
             <article class="publication-card">
+              <div class="publication-type">ACL 2025 Main · First Author</div>
+              <h3 class="publication-title">
+                <a href="https://aclanthology.org/2025.acl-long.831/" target="_blank" rel="noopener noreferrer">
+                  Analyzing the Rapid Generalization of SFT via the Perspective of Attention Head Activation Patterns
+                </a>
+              </h3>
+              <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Ting Liu, Bing Qin</div>
+              <div class="publication-venue">ACL 2025 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>监督微调为何能够在有限数据下快速带来广泛泛化，相关机制仍缺乏清晰解释。</p>
+                <p><strong>方法：</strong>从注意力头激活模式出发，分析 SFT 过程中模型内部表征变化与能力迁移规律。</p>
+                <p><strong>价值：</strong>为理解大模型快速泛化现象提供了机制层面的证据，也为后续数据选择与训练策略设计提供了分析依据。</p>
+              </div>
+            </article>
+
+            <article class="publication-card">
               <div class="publication-type">ACL 2024 Findings · First Author</div>
-              <h3 class="publication-title"><a href="https://aclanthology.org/2024.findings-acl.559/" target="_blank" rel="noopener noreferrer">Deciphering the Impact of Pretraining Data on Large Language Models through Machine Unlearning</a></h3>
+              <h3 class="publication-title">
+                <a href="https://aclanthology.org/2024.findings-acl.559/" target="_blank" rel="noopener noreferrer">
+                  Deciphering the Impact of Pretraining Data on Large Language Models through Machine Unlearning
+                </a>
+              </h3>
               <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Zhouhao Sun, Shi Jun, Ting Liu, Bing Qin</div>
               <div class="publication-venue">ACL 2024 Findings</div>
               <div class="publication-summary">
@@ -694,35 +771,6 @@
               </div>
             </article>
 
-            <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07208" target="_blank" rel="noopener noreferrer">MAESTRO: Meta-learning Adaptive Estimation of Scalarization Trade-offs for Reward Optimization</a></h3>
-              <div class="publication-authors">Yang Zhao, Hepeng Wang, Xiao Ding, Yangou Ouyang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
-              <div class="publication-venue">ACL 2026 Main Conference</div>
-              <div class="publication-summary">
-                <p><strong>关键词：</strong>多目标奖励优化、自适应标量化、元学习。</p>
-              </div>
-            </article>
-
-            <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07224" target="_blank" rel="noopener noreferrer">Consolidation or Adaptation? PRISM: Disentangling SFT and RL Data via Gradient Concentration</a></h3>
-              <div class="publication-authors">Yang Zhao, Yangou Ouyang, Xiao Ding, Hepeng Wang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
-              <div class="publication-venue">ACL 2026 Main Conference</div>
-              <div class="publication-summary">
-                <p><strong>关键词：</strong>SFT 与 RL 数据分工、梯度集中性、阶段化后训练分析。</p>
-              </div>
-            </article>
-
-            <article class="publication-card">
-              <div class="publication-type">ACL 2025 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://aclanthology.org/2025.acl-long.831/" target="_blank" rel="noopener noreferrer">Analyzing the Rapid Generalization of SFT via the Perspective of Attention Head Activation Patterns</a></h3>
-              <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Ting Liu, Bing Qin</div>
-              <div class="publication-venue">ACL 2025 Main Conference</div>
-              <div class="publication-summary">
-                <p><strong>关键词：</strong>SFT 快速泛化、注意力头激活模式、机制分析。</p>
-              </div>
-            </article>
           </div>
         </div>
 
@@ -831,11 +879,11 @@
           <div class="panel">
             <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">研究专长</h3>
             <div class="skill-list">
-              <span class="skill-pill">Data Selection for LLM Post-training</span>
+              <span class="skill-pill">Dynamic Data Optimization for LLMs</span>
+              <span class="skill-pill">Pretraining Data Attribution</span>
               <span class="skill-pill">Efficient Instruction Tuning</span>
               <span class="skill-pill">Reinforcement Learning Data Optimization</span>
               <span class="skill-pill">Reward Optimization and Scalarization</span>
-              <span class="skill-pill">Pretraining Data Attribution</span>
               <span class="skill-pill">Mechanistic Analysis of Generalization</span>
             </div>
           </div>
@@ -843,12 +891,12 @@
           <div class="panel">
             <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">学术标签</h3>
             <div class="skill-list">
+              <span class="skill-pill">Less is More</span>
               <span class="skill-pill">Data-centric LLM Training</span>
-              <span class="skill-pill">Post-training Efficiency</span>
+              <span class="skill-pill">Full-pipeline Optimization</span>
               <span class="skill-pill">Instruction Data Curation</span>
               <span class="skill-pill">RLHF Data Efficiency</span>
-              <span class="skill-pill">Knowledge Acquisition in LLMs</span>
-              <span class="skill-pill">Generalization and Capability Evolution</span>
+              <span class="skill-pill">Generalization and Knowledge Evolution</span>
             </div>
           </div>
         </div>
