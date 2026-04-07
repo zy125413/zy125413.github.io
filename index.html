@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>赵阳 | Personal Homepage</title>
-  <meta name="description" content="赵阳，哈尔滨工业大学 SCIR（Research Center for Social Computing and Interactive Robotics）博士生，研究方向为大语言模型后训练、数据选择与泛化分析。" />
+  <title>赵阳 | Academic Homepage</title>
+  <meta
+    name="description"
+    content="赵阳，哈尔滨工业大学 SCIR 博士生，研究方向为大语言模型后训练中的数据选择、训练效率优化、预训练数据归因与泛化分析。"
+  />
   <style>
     :root {
       --bg: #f5f7fb;
@@ -23,7 +26,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -154,6 +156,15 @@
       margin: 12px 0 0;
       font-size: 1.15rem;
       color: var(--muted);
+    }
+
+    .hero-motto {
+      margin: 10px 0 0;
+      font-size: 0.98rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .hero-desc {
@@ -388,6 +399,22 @@
       font-size: 0.92rem;
     }
 
+    .publication-summary {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(20, 36, 60, 0.10);
+    }
+
+    .publication-summary p {
+      margin: 8px 0 0;
+      color: #334155;
+      font-size: 0.95rem;
+    }
+
+    .publication-summary strong {
+      color: #182230;
+    }
+
     .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -474,7 +501,7 @@
         <a href="#education">教育</a>
         <a href="#publications">成果</a>
         <a href="#experience">实习</a>
-        <a href="#skills">技能</a>
+        <a href="#skills">研究专长</a>
       </div>
     </div>
   </div>
@@ -491,10 +518,12 @@
         <div>
           <div class="hero-tag">HIT · SCIR · Research Center for Social Computing and Interactive Robotics</div>
           <h1>赵阳</h1>
-          <p class="hero-subtitle">哈尔滨工业大学 SCIR 博士生</p>
+          <p class="hero-subtitle">哈尔滨工业大学 SCIR 博士生 · Data-centric LLM Post-training</p>
+          <p class="hero-motto">Less is More</p>
           <p class="hero-desc">
-            我是哈尔滨工业大学 SCIR（Research Center for Social Computing and Interactive Robotics）2022 级硕博连读博士生，导师为刘挺教授、丁效教授。
-            研究聚焦于大语言模型后训练、训练数据选择、奖励优化、预训练数据影响分析以及模型泛化与知识能力演化机制。
+            我是哈尔滨工业大学 SCIR（Research Center for Social Computing and Interactive Robotics）博士生，导师为刘挺教授、丁效教授。
+            我的研究聚焦于大语言模型后训练中的数据选择与优化问题，关注如何以更少训练数据实现更优的模型性能、训练效率与泛化能力。
+            相关成果以第一作者发表于 NeurIPS、ACL 等 CCF-A 会议 6 篇，并参与获得 ACL Outstanding Paper 的研究工作。
           </p>
 
           <div class="info-grid">
@@ -508,7 +537,7 @@
             </div>
             <div class="info-card">
               <div class="info-label">Research</div>
-              <div class="info-value">LLM Post-training · Data Selection · Reward Optimization</div>
+              <div class="info-value">Data Selection for LLM Post-training · Efficient Tuning · Reward Optimization</div>
             </div>
           </div>
 
@@ -533,32 +562,55 @@
         <div class="about-grid">
           <div class="panel">
             <p>
-              我目前在哈尔滨工业大学社会计算与信息检索研究中心攻读博士，长期关注大语言模型训练过程中的数据问题，
-              包括训练数据选择、指令调优数据筛选、预训练数据影响分析以及模型泛化机制等。
+              我目前在哈尔滨工业大学社会计算与信息检索研究中心攻读博士，长期从事大语言模型后训练中的数据选择研究。
+              我的核心关注点是：如何识别更具训练价值的样本，以更少的数据实现更高效的能力提升、更稳定的优化过程，以及更强的泛化表现。
             </p>
             <p>
-              我的研究围绕大语言模型后训练中的数据与优化问题展开，重点关注指令调优数据选择、强化学习训练中的数据分配与奖励优化、预训练数据影响分析，以及模型泛化与知识能力演化机制。
+              研究内容主要涵盖指令调优数据选择、强化学习阶段的数据优化、预训练数据归因，以及模型快速泛化与知识能力演化机制分析。
             </p>
             <div class="chips">
-              <span class="chip">LLM Post-training</span>
-              <span class="chip">Data Selection</span>
-              <span class="chip">Reward Optimization</span>
+              <span class="chip">Data Selection for LLMs</span>
+              <span class="chip">Efficient Post-training</span>
+              <span class="chip">Instruction Tuning</span>
+              <span class="chip">RL Data Optimization</span>
+              <span class="chip">Pretraining Data Attribution</span>
               <span class="chip">Generalization Analysis</span>
-              <span class="chip">Knowledge Acquisition</span>
             </div>
           </div>
+
           <div class="panel">
             <div class="section-header" style="margin-bottom: 14px;">
               <h3 class="section-title" style="font-size:1.08rem;">研究关键词</h3>
             </div>
             <div class="skill-list">
-              <span class="skill-pill">Post-training Data Curation</span>
-              <span class="skill-pill">Instruction Tuning Data Selection</span>
-              <span class="skill-pill">Reward Modeling & Optimization</span>
-              <span class="skill-pill">Pretraining Data Attribution</span>
-              <span class="skill-pill">Reasoning and Knowledge Enhancement</span>
-              <span class="skill-pill">Mechanistic Generalization Analysis</span>
+              <span class="skill-pill">Data Selection</span>
+              <span class="skill-pill">Instruction Tuning</span>
+              <span class="skill-pill">RLHF</span>
+              <span class="skill-pill">Reward Optimization</span>
+              <span class="skill-pill">Data Attribution</span>
+              <span class="skill-pill">Generalization</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">学术概览</h2>
+          <div class="section-note">Research snapshot</div>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">研究主线</h3>
+            <p style="margin:0; color:#334155;">
+              围绕大语言模型后训练中的数据选择问题展开研究，关注如何在更低数据成本下实现更优的性能、泛化能力与训练效率。
+            </p>
+          </div>
+          <div class="panel">
+            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">代表成果</h3>
+            <p style="margin:0; color:#334155;">
+              以第一作者在 NeurIPS、ACL 等会议发表多篇论文，研究涵盖指令调优数据选择、强化学习数据优化、预训练数据归因与模型快速泛化机制分析。
+            </p>
           </div>
         </div>
       </section>
@@ -574,10 +626,10 @@
               <div class="timeline-title">哈尔滨工业大学</div>
               <div class="timeline-time">2022 - 至今</div>
             </div>
-            <div class="timeline-meta">计算学部</div>
+            <div class="timeline-meta">计算学部 · 硕博连读</div>
             <ul>
-              <li>计算机技术 · 硕士</li>
-              <li>计算机科学与技术 · 博士</li>
+              <li>计算机科学与技术博士研究生</li>
+              <li>导师：刘挺教授、丁效教授</li>
             </ul>
           </article>
 
@@ -607,24 +659,15 @@
           </div>
           <div class="publication-list">
             <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07208" target="_blank" rel="noopener noreferrer">MAESTRO: Meta-learning Adaptive Estimation of Scalarization Trade-offs for Reward Optimization</a></h3>
-              <div class="publication-authors">Yang Zhao, Hepeng Wang, Xiao Ding, Yangou Ouyang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
-              <div class="publication-venue">ACL 2026 Main Conference</div>
-            </article>
-
-            <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07224" target="_blank" rel="noopener noreferrer">Consolidation or Adaptation? PRISM: Disentangling SFT and RL Data via Gradient Concentration</a></h3>
-              <div class="publication-authors">Yang Zhao, Yangou Ouyang, Xiao Ding, Hepeng Wang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
-              <div class="publication-venue">ACL 2026 Main Conference</div>
-            </article>
-
-            <article class="publication-card">
               <div class="publication-type">NeurIPS 2025 · First Author</div>
               <h3 class="publication-title"><a href="https://openreview.net/forum?id=sH0ZwzDJZn" target="_blank" rel="noopener noreferrer">UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement Learning Data Selection</a></h3>
               <div class="publication-authors">Yang Zhao, Kai Xiong, Xiao Ding, Li Du, Yangou Ouyang, Zhouhao Sun, Jiannan Guan, Wenbin Zhang, Bin Liu, Dong Hu, Bing Qin, Ting Liu</div>
               <div class="publication-venue">NeurIPS 2025</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>强化学习阶段训练代价高昂，现有方法往往对所有样本一视同仁，导致数据利用效率不足。</p>
+                <p><strong>方法：</strong>提出不确定性感知的数据选择框架，从样本学习价值出发动态筛选更关键的 RL 训练数据。</p>
+                <p><strong>价值：</strong>在更少训练数据下实现更优或可比的强化学习效果，为高成本后训练提供了更高效的数据优化方案。</p>
+              </div>
             </article>
 
             <article class="publication-card">
@@ -632,13 +675,11 @@
               <h3 class="publication-title"><a href="https://aclanthology.org/2025.acl-long.1189/" target="_blank" rel="noopener noreferrer">Beyond similarity: A gradient-based graph method for instruction tuning data selection</a></h3>
               <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Yangou Ouyang, Hepeng Wang, Kai Xiong, Jinglong Gao, Zhouhao Sun, Dongliang Xu, Qing Yang, Dongchen Li, Bing Qin, Ting Liu</div>
               <div class="publication-venue">ACL 2025 Main Conference</div>
-            </article>
-
-            <article class="publication-card">
-              <div class="publication-type">ACL 2025 Main · First Author</div>
-              <h3 class="publication-title"><a href="https://aclanthology.org/2025.acl-long.831/" target="_blank" rel="noopener noreferrer">Analyzing the Rapid Generalization of SFT via the Perspective of Attention Head Activation Patterns</a></h3>
-              <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Ting Liu, Bing Qin</div>
-              <div class="publication-venue">ACL 2025 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>现有指令调优数据选择方法大多依赖语义相似度，难以准确反映样本对模型更新的真实贡献。</p>
+                <p><strong>方法：</strong>构建基于梯度关系的图方法，从优化视角建模样本间交互，选择更具训练价值的数据子集。</p>
+                <p><strong>价值：</strong>突破了基于表面相似性的筛选范式，在减少训练数据规模的同时有效提升指令调优性能。</p>
+              </div>
             </article>
 
             <article class="publication-card">
@@ -646,6 +687,41 @@
               <h3 class="publication-title"><a href="https://aclanthology.org/2024.findings-acl.559/" target="_blank" rel="noopener noreferrer">Deciphering the Impact of Pretraining Data on Large Language Models through Machine Unlearning</a></h3>
               <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Zhouhao Sun, Shi Jun, Ting Liu, Bing Qin</div>
               <div class="publication-venue">ACL 2024 Findings</div>
+              <div class="publication-summary">
+                <p><strong>问题：</strong>预训练数据如何影响大语言模型能力形成，长期以来缺乏可操作的直接分析路径。</p>
+                <p><strong>方法：</strong>借助机器遗忘框架，从“移除数据后的能力变化”角度分析不同预训练数据的实际影响。</p>
+                <p><strong>价值：</strong>为预训练数据归因与价值评估提供了新的研究路径，也为高价值数据筛选提供了理论与方法基础。</p>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07208" target="_blank" rel="noopener noreferrer">MAESTRO: Meta-learning Adaptive Estimation of Scalarization Trade-offs for Reward Optimization</a></h3>
+              <div class="publication-authors">Yang Zhao, Hepeng Wang, Xiao Ding, Yangou Ouyang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
+              <div class="publication-venue">ACL 2026 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>关键词：</strong>多目标奖励优化、自适应标量化、元学习。</p>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <h3 class="publication-title"><a href="https://arxiv.org/abs/2601.07224" target="_blank" rel="noopener noreferrer">Consolidation or Adaptation? PRISM: Disentangling SFT and RL Data via Gradient Concentration</a></h3>
+              <div class="publication-authors">Yang Zhao, Yangou Ouyang, Xiao Ding, Hepeng Wang, Bibo Cai, Kai Xiong, Jinglong Gao, Zhouhao Sun, Li Du, Bing Qin, Ting Liu</div>
+              <div class="publication-venue">ACL 2026 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>关键词：</strong>SFT 与 RL 数据分工、梯度集中性、阶段化后训练分析。</p>
+              </div>
+            </article>
+
+            <article class="publication-card">
+              <div class="publication-type">ACL 2025 Main · First Author</div>
+              <h3 class="publication-title"><a href="https://aclanthology.org/2025.acl-long.831/" target="_blank" rel="noopener noreferrer">Analyzing the Rapid Generalization of SFT via the Perspective of Attention Head Activation Patterns</a></h3>
+              <div class="publication-authors">Yang Zhao, Li Du, Xiao Ding, Kai Xiong, Ting Liu, Bing Qin</div>
+              <div class="publication-venue">ACL 2025 Main Conference</div>
+              <div class="publication-summary">
+                <p><strong>关键词：</strong>SFT 快速泛化、注意力头激活模式、机制分析。</p>
+              </div>
             </article>
           </div>
         </div>
@@ -658,30 +734,35 @@
             <article class="publication-card">
               <div class="publication-type">ACL 2024 Outstanding Paper · Co-author</div>
               <h3 class="publication-title"><a href="https://arxiv.org/abs/2408.12942" target="_blank" rel="noopener noreferrer">Causal-Guided Active Learning for Debiasing Large Language Models</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">ACL 2024 Outstanding Paper</div>
             </article>
 
             <article class="publication-card">
               <div class="publication-type">ICLR 2026 · Co-author</div>
               <h3 class="publication-title"><a href="https://openreview.net/forum?id=qVadFFSfrI" target="_blank" rel="noopener noreferrer">Diagnosing and Remedying Knowledge Deficiencies in LLMs via Label-free Curricular Meaningful Learning</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">ICLR 2026</div>
             </article>
 
             <article class="publication-card">
               <div class="publication-type">ACL 2026 Findings · Co-author</div>
               <h3 class="publication-title"><a href="https://openreview.net/forum?id=69up8SmdVh" target="_blank" rel="noopener noreferrer">Large Language Models Are Still Misled by Simple Bias Ensembles</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">ACL 2026 Findings</div>
             </article>
 
             <article class="publication-card">
               <div class="publication-type">Neural Networks · Co-author</div>
               <h3 class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S0893608025006483" target="_blank" rel="noopener noreferrer">Think Straight or Think Again? Continual Joint Learning of Deduction, Abduction and Induction</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">Neural Networks</div>
             </article>
 
             <article class="publication-card">
               <div class="publication-type">ArXiv · Co-author</div>
               <h3 class="publication-title"><a href="https://arxiv.org/abs/2504.12898" target="_blank" rel="noopener noreferrer">Information Gain-Guided Causal Intervention for Autonomous Debiasing Large Language Models</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">ArXiv preprint</div>
             </article>
           </div>
@@ -695,12 +776,14 @@
             <article class="publication-card">
               <div class="publication-type">Technical Report · Co-author</div>
               <h3 class="publication-title"><a href="https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/Seed2.0%20Model%20Card.pdf" target="_blank" rel="noopener noreferrer">Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">Technical Report</div>
             </article>
 
             <article class="publication-card">
               <div class="publication-type">Technical Report · Co-author</div>
               <h3 class="publication-title"><a href="https://arxiv.org/abs/2603.20633" target="_blank" rel="noopener noreferrer">Seed1.8 Model Card: Towards Generalized Real-World Agency</a></h3>
+              <div class="publication-authors">Co-author</div>
               <div class="publication-venue">ArXiv preprint</div>
             </article>
           </div>
@@ -721,7 +804,7 @@
             <div class="timeline-meta">LLM 后训练研究实习生 · Mentor: 秦禹嘉</div>
             <ul>
               <li>深度参与 Seed 1.8 与 Seed 2.0 相关研究与训练工作。</li>
-              <li>研究方向聚焦于豆包专家模式后训练，以及 Seed 基础能力提升。</li>
+              <li>研究聚焦于大模型后训练与基础能力提升。</li>
             </ul>
           </article>
 
@@ -746,24 +829,26 @@
         </div>
         <div class="two-col">
           <div class="panel">
-            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">核心方向</h3>
+            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">研究专长</h3>
             <div class="skill-list">
-              <span class="skill-pill">Large Language Model Post-training</span>
-              <span class="skill-pill">Instruction Tuning Data Selection</span>
+              <span class="skill-pill">Data Selection for LLM Post-training</span>
+              <span class="skill-pill">Efficient Instruction Tuning</span>
               <span class="skill-pill">Reinforcement Learning Data Optimization</span>
               <span class="skill-pill">Reward Optimization and Scalarization</span>
-              <span class="skill-pill">Pretraining Data Impact Analysis</span>
-              <span class="skill-pill">Mechanistic Generalization Analysis</span>
+              <span class="skill-pill">Pretraining Data Attribution</span>
+              <span class="skill-pill">Mechanistic Analysis of Generalization</span>
             </div>
           </div>
+
           <div class="panel">
-            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">研究兴趣</h3>
+            <h3 class="section-title" style="font-size:1.08rem; margin-bottom: 14px;">学术标签</h3>
             <div class="skill-list">
-              <span class="skill-pill">Knowledge Deficiency Diagnosis in LLMs</span>
-              <span class="skill-pill">Reasoning Enhancement across Deduction, Abduction and Induction</span>
-              <span class="skill-pill">Label-free Curricular Learning</span>
-              <span class="skill-pill">Machine Unlearning for Data Attribution</span>
-              <span class="skill-pill">Debiasing and Causal Intervention for LLMs</span>
+              <span class="skill-pill">Data-centric LLM Training</span>
+              <span class="skill-pill">Post-training Efficiency</span>
+              <span class="skill-pill">Instruction Data Curation</span>
+              <span class="skill-pill">RLHF Data Efficiency</span>
+              <span class="skill-pill">Knowledge Acquisition in LLMs</span>
+              <span class="skill-pill">Generalization and Capability Evolution</span>
             </div>
           </div>
         </div>
