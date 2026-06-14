@@ -176,7 +176,7 @@
 
     .info-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 14px;
       margin-top: 24px;
     }
@@ -452,6 +452,94 @@
     }
 
 
+    .job-spotlight {
+      margin-top: 22px;
+      padding: 0;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at left top, rgba(255,255,255,0.32), transparent 34%),
+        linear-gradient(135deg, #182230 0%, #224fc3 100%);
+      color: #fff;
+      box-shadow: 0 24px 55px rgba(34, 81, 204, 0.22);
+      border: 1px solid rgba(255,255,255,0.20);
+      overflow: hidden;
+    }
+
+    .job-spotlight-inner {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      padding: 28px;
+      align-items: center;
+    }
+
+    .job-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.14);
+      color: rgba(255,255,255,0.92);
+      font-size: 0.84rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .job-title {
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2.05rem);
+      line-height: 1.22;
+      letter-spacing: -0.04em;
+    }
+
+    .job-desc {
+      margin: 14px 0 0;
+      color: rgba(255,255,255,0.86);
+      max-width: 760px;
+      line-height: 1.75;
+    }
+
+    .job-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .job-tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .job-side-card {
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(12px);
+    }
+
+    .job-side-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.02rem;
+      color: #fff;
+    }
+
+    .job-side-card ul {
+      margin: 0;
+      padding-left: 1.15em;
+      color: rgba(255,255,255,0.86);
+      line-height: 1.72;
+    }
+
+
     .highlight-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -494,6 +582,10 @@
     }
 
     @media (max-width: 960px) {
+      .job-spotlight-inner {
+        grid-template-columns: 1fr;
+      }
+
       .highlight-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -560,6 +652,7 @@
     <div class="container nav">
       <div class="brand">赵阳 · Yang Zhao</div>
       <div class="nav-links">
+        <a href="#job-expectation">求职期待</a>
         <a href="#research-focus">研究兴趣</a>
         <a href="#experience">实习</a>
         <a href="#publications">论文</a>
@@ -584,11 +677,16 @@
           <p class="hero-subtitle">Ph.D. Student @ HIT SCIR · LLM Post-training / Reasoning</p>
           <p class="hero-motto">Data · Training Dynamics · Reasoning</p>
           <p class="hero-desc">
-            我是哈尔滨工业大学 SCIR 博士生，导师为刘挺教授、丁效教授。我的研究关注 <strong>LLM 后训练中的数据选择、训练动态与能力泛化</strong>，尤其是 SFT、RL、CoT 优化与奖励优化中，数据和训练策略如何影响模型的推理、泛化与复杂任务能力。<br />
-            目前，我在工业实习中参与真实大模型后训练实验，方向包括专家模式训练、CoT 退火优化、预训练模型效果分析、midtrain / SFT 合版与 general-agent 能力迭代。相关成果以第一作者发表于 NeurIPS、ACL 等 CCF-A 会议 6 篇。
+            我是哈尔滨工业大学 SCIR 博士生，导师为刘挺教授、丁效教授。我的研究聚焦于 <strong>Data-centric LLM Post-training</strong>，关注训练数据、优化目标与模型能力之间的关系，尤其是 SFT、RL、CoT 优化、奖励优化和数据选择如何影响大模型的推理、泛化与复杂任务能力。<br />
+            截至目前，我以第一作者/共同第一作者身份在 NeurIPS、ACL 等会议发表 6 篇论文，且均为作者列表第一顺位。我的博士研究围绕预训练数据归因、SFT 数据选择、SFT 泛化机制、RL 数据优化、阶段间数据分工和奖励目标权衡展开。<br />
+            我也在工业实习中参与真实大模型后训练实验，工作涉及 reasoning-oriented post-training、CoT 优化、预训练模型能力分析、mid-training / SFT 合版实验，以及 general-agent 能力迭代。
           </p>
 
           <div class="info-grid">
+            <div class="info-card">
+              <div class="info-label">Status</div>
+              <div class="info-value">Expected Graduation · 2027</div>
+            </div>
             <div class="info-card">
               <div class="info-label">Email</div>
               <div class="info-value"><a href="mailto:yangzhao@ir.hit.edu.cn">yangzhao@ir.hit.edu.cn</a></div>
@@ -605,6 +703,7 @@
 
           <div class="quick-links">
             <a class="button primary" href="files/Yang_Zhao_CV.pdf" target="_blank" rel="noopener noreferrer">下载简历</a>
+            <a class="button ghost" href="#job-expectation">求职期待</a>
             <a class="button ghost" href="#research-focus">研究兴趣</a>
             <a class="button ghost" href="#experience">实习经历</a>
             <a class="button ghost" href="#publications">代表论文</a>
@@ -617,6 +716,31 @@
 
   <main>
     <div class="container">
+      <section id="job-expectation" class="job-spotlight">
+        <div class="job-spotlight-inner">
+          <div>
+            <div class="job-eyebrow">Career Expectation · 2027</div>
+            <h2 class="job-title">求职期待：大模型后训练迭代 / General Agent</h2>
+            <p class="job-desc">
+              我预计于 <strong>2027 年毕业</strong>，期待从事与大模型<strong>后训练迭代</strong>和 <strong>General Agent</strong> 相关的研究/算法岗位，尤其关注真实模型训练、后训练 recipe、CoT 优化、SFT/RL 迭代、合版训练与 agentic capability improvement。
+            </p>
+            <div class="job-tags">
+              <span class="job-tag">Post-training Iteration</span>
+              <span class="job-tag">General Agent</span>
+              <span class="job-tag">CoT Optimization</span>
+              <span class="job-tag">SFT / RL Iteration</span>
+            </div>
+          </div>
+          <div class="job-side-card">
+            <h3>Target Roles</h3>
+            <ul>
+              <li>LLM 后训练迭代：SFT/RL recipe、模型分析、CoT 优化与合版训练。</li>
+              <li>General Agent：工具使用、长程任务、推理智能体与 agent 能力迭代。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="research-focus" class="section">
         <div class="section-header">
           <h2 class="section-title">研究兴趣</h2>
@@ -647,7 +771,7 @@
         <div class="highlight-grid">
           <div class="highlight-card">
             <div class="highlight-number">6×</div>
-            <div class="highlight-text">NeurIPS / ACL 等 CCF-A 会议一作论文，覆盖预训练、SFT、RL 与奖励优化。</div>
+            <div class="highlight-text">NeurIPS / ACL 等会议第一/共同第一作者论文，均为作者列表第一顺位。</div>
           </div>
           <div class="highlight-card">
             <div class="highlight-number">Topic</div>
@@ -677,10 +801,10 @@
             </div>
             <div class="timeline-meta">LLM 后训练研究实习生 · Focus: Post-training for reasoning, pretraining-model analysis and general-agent capability</div>
             <ul>
-              <li>负责 2026 年春节档豆包“专家模式”大模型训练，参与后训练方案设计、合版实验与能力对齐。</li>
-              <li>负责 Seed2.0 Lite 及后续版本的 CoT 退火优化，分析后训练策略对推理、数学、代码、指令遵循与多语言能力的影响。</li>
-              <li>负责新版本预训练模型效果分析与验收，结合后训练实验、学习曲线与综合评测判断模型在后续训练阶段的潜力。</li>
-              <li>参与 midtrain / SFT 合版训练与实验设计，以及 general-agent 相关能力迭代。</li>
+              <li>参与线上大模型专家模式的后训练方案设计、合版实验与能力对齐，围绕复杂问答、推理和指令遵循能力进行训练与分析。</li>
+              <li>参与线上模型及后续版本的 CoT 优化实验，分析不同后训练策略对数学、代码、推理、指令遵循和多语言能力的影响。</li>
+              <li>参与新一代预训练模型的能力分析与阶段验收，结合后训练实验、学习曲线和综合评测判断模型在后续训练阶段的潜力。</li>
+              <li>参与 mid-training / SFT 合版训练与实验设计，以及 general-agent 相关能力迭代。</li>
             </ul>
           </article>
 
@@ -705,20 +829,21 @@
         </div>
 
         <div class="research-overview">
-          我的博士课题聚焦于 <strong>LLM 全阶段训练中的数据动态优化</strong>：研究训练数据如何影响模型在预训练、SFT、RL 与奖励优化等阶段的能力形成。
-          下列六篇一作论文分别从预训练数据归因、SFT 数据选择、快速泛化机制、RL 数据优化、阶段间数据分工以及奖励目标动态权衡等角度，
-          共同构成了我对 data-centric LLM training 的系统性研究。
+          我的博士研究围绕 <strong>Data-centric LLM Training / Post-training</strong> 展开，目标是理解和优化训练数据在预训练、SFT、RL 与奖励优化等阶段中的作用。
+          下列代表性论文分别从预训练数据归因、指令微调数据选择、SFT 快速泛化机制、RL 数据优化、SFT/RL 阶段分工，以及多目标奖励优化等角度展开，
+          构成了我对 data-centric post-training 的系统性研究。<br />
+          <strong>注：</strong>以下论文为第一作者或共同第一作者论文，且本人均为作者列表第一顺位。
         </div>
 
         <div class="publication-group" style="padding-top: 4px;">
           <div class="section-header" style="margin-bottom: 16px;">
-            <h3 class="section-title" style="font-size:1.12rem;">一作论文</h3>
-            <div class="section-note">按时间倒序排列的一作代表性论文</div>
+            <h3 class="section-title" style="font-size:1.12rem;">第一/共同第一作者论文</h3>
+            <div class="section-note">按时间倒序排列；均为作者列表第一顺位</div>
           </div>
           <div class="publication-list">
 
             <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <div class="publication-type">ACL 2026 Main · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://arxiv.org/abs/2601.07208" target="_blank" rel="noopener noreferrer">
                   MAESTRO: Meta-learning Adaptive Estimation of Scalarization Trade-offs for Reward Optimization
@@ -734,7 +859,7 @@
             </article>
 
             <article class="publication-card">
-              <div class="publication-type">ACL 2026 Main · First Author</div>
+              <div class="publication-type">ACL 2026 Main · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://arxiv.org/abs/2601.07224" target="_blank" rel="noopener noreferrer">
                   Consolidation or Adaptation? PRISM: Disentangling SFT and RL Data via Gradient Concentration
@@ -750,7 +875,7 @@
             </article>
 
             <article class="publication-card">
-              <div class="publication-type">NeurIPS 2025 · First Author</div>
+              <div class="publication-type">NeurIPS 2025 · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://openreview.net/forum?id=sH0ZwzDJZn" target="_blank" rel="noopener noreferrer">
                   UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement Learning Data Selection
@@ -766,7 +891,7 @@
             </article>
 
             <article class="publication-card">
-              <div class="publication-type">ACL 2025 Main · First Author</div>
+              <div class="publication-type">ACL 2025 Main · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://aclanthology.org/2025.acl-long.1189/" target="_blank" rel="noopener noreferrer">
                   Beyond similarity: A gradient-based graph method for instruction tuning data selection
@@ -782,7 +907,7 @@
             </article>
 
             <article class="publication-card">
-              <div class="publication-type">ACL 2025 Main · First Author</div>
+              <div class="publication-type">ACL 2025 Main · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://aclanthology.org/2025.acl-long.831/" target="_blank" rel="noopener noreferrer">
                   Analyzing the Rapid Generalization of SFT via the Perspective of Attention Head Activation Patterns
@@ -798,7 +923,7 @@
             </article>
 
             <article class="publication-card">
-              <div class="publication-type">ACL 2024 Findings · First Author</div>
+              <div class="publication-type">ACL 2024 Findings · First / Co-first Author · First-listed</div>
               <h3 class="publication-title">
                 <a href="https://aclanthology.org/2024.findings-acl.559/" target="_blank" rel="noopener noreferrer">
                   Deciphering the Impact of Pretraining Data on Large Language Models through Machine Unlearning
