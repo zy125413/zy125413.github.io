@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>赵阳 | Data-centric LLM Training</title>
+  <link rel="icon" href="favicon.ico" />
   <meta
     name="description"
     content="赵阳，哈尔滨工业大学 SCIR 博士生，研究主线为 Data-centric LLM Training，求职方向为大模型后训练 / General Agent，具备覆盖预训练、Mid-train、SFT、RL 与 Agent 训练的数据中心研究背景，关注后训练数据协同、CoT 优化、奖励优化与智能体能力迭代。"
@@ -706,6 +707,52 @@
       font-size: 0.9rem;
     }
 
+    .site-footer {
+      margin-top: 8px;
+      border-top: 1px solid var(--line);
+      background: rgba(248, 251, 255, 0.7);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px 24px;
+      padding: 28px 0 18px;
+    }
+
+    .footer-brand {
+      font-weight: 760;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+    }
+
+    .footer-brand span {
+      margin-left: 6px;
+      color: var(--muted);
+      font-weight: 520;
+      font-size: 0.92rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .footer-links a { color: var(--muted); }
+    .footer-links a:hover { color: var(--primary); }
+
+    .footer-copy {
+      width: 100%;
+      padding: 14px 0 30px;
+      color: var(--subtle);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--line);
+    }
 
     @media (max-width: 900px) {
       .hero-card,
@@ -785,7 +832,7 @@
             <a href="tel:+8617808073848">(+86) 17808073848</a>
           </div>
           <div class="quick-links">
-            <a class="button primary" href="files/Yang_Zhao_CV.pdf" target="_blank" rel="noopener noreferrer">下载简历</a>
+            <a class="button primary" href="https://scholar.google.com.hk/citations?user=T5MuQE4AAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
             <a class="button job" href="#skills">查看核心能力</a>
             <a class="button" href="#publications">代表论文</a>
             <a class="button" href="mailto:yangzhao@ir.hit.edu.cn">联系我</a>
@@ -1086,6 +1133,19 @@
     </div>
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">赵阳 <span>Yang Zhao</span></div>
+        <nav class="footer-links" aria-label="页脚链接">
+          <a href="mailto:yangzhao@ir.hit.edu.cn">yangzhao@ir.hit.edu.cn</a>
+          <a href="tel:+8617808073848">(+86) 17808073848</a>
+          <a href="https://scholar.google.com.hk/citations?user=T5MuQE4AAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        </nav>
+      </div>
+      <div class="footer-copy">© 2026 赵阳 Yang Zhao · 哈尔滨工业大学 SCIR · Data-centric LLM Training</div>
+    </div>
+  </footer>
 
 </body>
 </html>
